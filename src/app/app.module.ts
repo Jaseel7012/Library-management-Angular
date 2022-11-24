@@ -14,6 +14,7 @@ import { LibraryBookDeleteComponent } from './library-book-delete/library-book-d
 import { LibraryEditBookComponent } from './library-edit-book/library-edit-book.component';
 import { LibraryBooksIssueComponent } from './library-books-issue/library-books-issue.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LibraryBookDeleteComponent,
     LibraryEditBookComponent,
     LibraryBooksIssueComponent,
-    NavbarComponent
+    NavbarComponent,
+    NavbarUserComponent
   ],
   imports: [
     BrowserModule,

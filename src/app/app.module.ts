@@ -9,6 +9,7 @@ import { LibraryUserRegisterComponent } from './library-user-register/library-us
 import { LibraryUserLogComponent } from './library-user-log/library-user-log.component';
 import { LibraryAddBookComponent } from './library-add-book/library-add-book.component';
 import { LibraryViewBooksComponent } from './library-view-books/library-view-books.component';
+import { LibraryBookSearchComponent } from './library-book-search/library-book-search.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LibraryViewBooksComponent } from './library-view-books/library-view-boo
     LibraryUserRegisterComponent,
     LibraryUserLogComponent,
     LibraryAddBookComponent,
-    LibraryViewBooksComponent
+    LibraryViewBooksComponent,
+    LibraryBookSearchComponent
   ],
   imports: [
     BrowserModule,

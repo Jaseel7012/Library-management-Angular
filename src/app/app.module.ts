@@ -12,6 +12,7 @@ import { LibraryViewBooksComponent } from './library-view-books/library-view-boo
 import { LibraryBookSearchComponent } from './library-book-search/library-book-search.component';
 import { LibraryBookDeleteComponent } from './library-book-delete/library-book-delete.component';
 import { LibraryEditBookComponent } from './library-edit-book/library-edit-book.component';
+import { LibraryBooksIssueComponent } from './library-books-issue/library-books-issue.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LibraryEditBookComponent } from './library-edit-book/library-edit-book.
     LibraryViewBooksComponent,
     LibraryBookSearchComponent,
     LibraryBookDeleteComponent,
-    LibraryEditBookComponent
+    LibraryEditBookComponent,
+    LibraryBooksIssueComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,42 @@ import { LibraryEditBookComponent } from './library-edit-book/library-edit-book.
 import { LibraryBooksIssueComponent } from './library-books-issue/library-books-issue.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarUserComponent } from './navbar-user/navbar-user.component';
+import { RouterModule,Routes } from '@angular/router';
+
+const myroute:Routes=[
+  {path:'userlog',
+  'component':LibraryUserLogComponent
+
+  },
+  {
+    path:'userreg',
+    component:LibraryUserRegisterComponent
+  },{
+    path:'adminreg',
+    component:LibraryAdminRegComponent
+  },{
+    path:'',
+    component:LibraryAdminLogComponent
+  },{
+    path:'add',
+    component:LibraryAddBookComponent
+  },{
+    path:'delete',
+    component:LibraryBookDeleteComponent
+  },{
+    path:'edit',
+    component:LibraryEditBookComponent
+  },{
+    path:'view',
+    component:LibraryViewBooksComponent
+  },{
+    path:'search',
+    component:LibraryBookSearchComponent
+  },{
+    path:'issue',
+    component:LibraryBooksIssueComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -34,7 +70,8 @@ import { NavbarUserComponent } from './navbar-user/navbar-user.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]

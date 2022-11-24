@@ -7,6 +7,7 @@ import { LibraryAdminLogComponent } from './library-admin-log/library-admin-log.
 import { LibraryAdminRegComponent } from './library-admin-reg/library-admin-reg.component';
 import { LibraryUserRegisterComponent } from './library-user-register/library-user-register.component';
 import { LibraryUserLogComponent } from './library-user-log/library-user-log.component';
+import { LibraryAddBookComponent } from './library-add-book/library-add-book.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LibraryUserLogComponent } from './library-user-log/library-user-log.com
     LibraryAdminLogComponent,
     LibraryAdminRegComponent,
     LibraryUserRegisterComponent,
-    LibraryUserLogComponent
+    LibraryUserLogComponent,
+    LibraryAddBookComponent
   ],
   imports: [
     BrowserModule,

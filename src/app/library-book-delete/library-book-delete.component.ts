@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./library-book-delete.component.css']
 })
 export class LibraryBookDeleteComponent {
+name=""
+view=()=>{
+  let data:any={
+    'name':this.name
+  }
+  console.log(data)
+}
 
 }

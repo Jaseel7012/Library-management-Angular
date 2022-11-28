@@ -9,45 +9,46 @@
                     
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <label  for="" class="form-label">Name</label>
+                    <input type="text" name="name" [(ngModel)]="name" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Adhar Number</label>
-                    <input type="text" class="form-control">
+                    <input type="text"  name="anumber" [(ngModel)]="anumber" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea  name="address" [(ngModel)]="address" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Pin Code</label>
-                    <input type="text" class="form-control">
+                    <input name="pincode" [(ngModel)]="pincode" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Email Id</label>
-                    <input type="text" class="form-control">
+                    <input name="email" [(ngModel)]="email" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of Birth</label>
-                    <input type="text" class="form-control">
+                    <input name="dob" [(ngModel)]="dob" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input name="pno" [(ngModel)]="pno" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">User Name</label>
-                    <input type="text" class="form-control"></div>
+                    <input name="uname" [(ngModel)]="uname" type="text" class="form-control"></div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">Password</label>
-                        <input type="text" class="form-control">
+                        <input name="pswrd" [(ngModel)]="pswrd" type="text" class="form-control">
                 </div>  
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Confirm Password</label>
-                    <input type="text" class="form-control">
+                    <input name="cnfrm" [(ngModel)]="cnfrm" type="text" class="form-control">
                 </div>  
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button class="btn btn-success" (click)="viewreg()">REG</button>
                     <a href="/add" class="btn btn-success">Register</a>
                     <p> Already member?<a href="">Login here</a></p>
                 </div>

@@ -13,22 +13,22 @@ style="background-image: url('https://img.freepik.com/free-photo/book-library-wi
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label for="" class="form-label">Name</label>
-                                <input type="text" class="form-control">
+                                <input name="name" [(ngModel)]="name" type="text" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label for="" class="form-label">Book Title</label>
-                                <input type="text" class="form-control">
+                                <input  name="bname" [(ngModel)]="bname" type="text" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label for="" class="form-label">Date OF Issue</label>
-                                <input type="date" class="form-control">
+                                <input name="issuedate" [(ngModel)]="issuedate" type="date" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                 <label for="" class="form-label">Membership</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="membership" [(ngModel)]="membership" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                                <button class="btn btn-success">Submit</button>
+                                <button class="btn btn-success" (click)="view()">Submit</button>
                             </div>
                         </div>
                     </div>

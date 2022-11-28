@@ -16,6 +16,7 @@ import { LibraryBooksIssueComponent } from './library-books-issue/library-books-
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { RouterModule,Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myroute:Routes=[
   {path:'userlog',
@@ -71,7 +72,8 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
